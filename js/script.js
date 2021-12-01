@@ -1,3 +1,5 @@
+/* JS Code for DOM manipulation */
+
 // invite button
 const addGuestButton = document.querySelector(".invite");
 // label for the invite button
@@ -69,7 +71,7 @@ const assignItems = function () {
     let randomPotluckItem = potluckItems[randomPotluckIndex];
     let listItem = document.createElement("li");
     listItem.innerText = `${guest.innerText} is bringing ${randomPotluckItem}.`;
-    //console.log(listItem);
+   
     assignedItems.append(listItem);
     potluckItems.splice(randomPotluckIndex, 1);
   }
